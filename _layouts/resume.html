@@ -28,35 +28,61 @@
 
             <div class="executive-summary">
                 <p>
-                    I like to make beautiful, useful things with code. I'm looking to work on something with meaning. Something that will make the world a better place.
+                    I like to make beautiful, useful things with code. I'm looking to work on something with meaning.
+                    Something that will make the world a better place.
                 </p>
             </div>
 
             {% if site.resume_looking_for_work == 'yes' %}
-                <a href="mailto:{{ site.resume_contact_email }}" class="contact-button">Contact me</a>
+            <a href="mailto:{{ site.resume_contact_email }}" class="contact-button">Contact me</a>
             {% elsif site.resume_looking_for_work == 'no' %}
-                <a class="contact-button not-looking">I'm not looking for work right now.</a>
+            <a class="contact-button not-looking">I'm not looking for work right now.</a>
             {% else %}
             {% endif %}
 
         </header>
 
-        <section class="content-section"> <!-- Working -->
+        <section class="content-section">
+            <!-- Working -->
             <header class="section-header">
                 <h2>Working</h2>
             </header>
 
             <div class="resume-item">
+                <h3 class="resume-item-title">Zendesk</h3>
+                <h4 class="resume-item-details">2016 — Present</h4>
+                <p class="resume-item-copy">
+                    Joining Zendesk was a big step up for me in my career. This is a truly large-scale enterprise, and
+                    I'm writing code that affects millions of people.
+                </p>
+                <p class="resume-item-copy">
+                    I've continued my habit of shaping the culture of the company around me by writing a chat bot that
+                    nudges people away from papercutting their colleagues. I've also had the opportunity to architect
+                    and develop a microservice system for conversations, which can handle all the scale that Zendesk
+                    demands.
+                </p>
+            </div><!-- end of resume-item -->
+
+            <div class="resume-item">
                 <h3 class="resume-item-title">Gridium</h3>
-                <h4 class="resume-item-details">2014 — Present</h4>
+                <h4 class="resume-item-details">2014 — 2016</h4>
                 <p class="resume-item-copy">
-                    When I joined Gridium, I was engineer number 6, and employee number 13. I had never worked at a company at this early stage, and the opportunity to shape the course of its history was very interesting to me.
+                    When I joined Gridium, I was engineer number 6, and employee number 13. I had never worked at a
+                    company at this early stage, and the opportunity to shape the course of its history was very
+                    interesting to me.
                 </p>
                 <p class="resume-item-copy">
-                    I've found that being part of such a small team has some major advantages, among which is the ability to shape the culture and technological substrate. I'm helping to build the kind of company I want to work for. Working on a software system at the beginning of its life gave me the opportunity to apply all the lessons I've learned from working on more mature applications. I've taught and learned a lot about being making remote teams work.
+                    I've found that being part of such a small team had some major advantages, among which is the
+                    ability to shape the culture and technological substrate. I helped to build the kind of company I
+                    want to work for. Working on a software system at the beginning of its life gave me the opportunity
+                    to apply all the lessons I've learned from working on more-mature applications. I've taught and
+                    learned a lot about being making remote teams work.
                 </p>
                 <p class="resume-item-copy">
-                    I've been working on all parts of the web-application stack, from hosting in Docker to data storage to API design to Ember on the front end. I've also been hacking the culture with <a href="https://hubot.github.com/">Hubot</a>, and spreading organizational, cultural, and technological wisdom by speaking at conferences.
+                    I worked on all parts of the web-application stack, from hosting in Docker to data storage
+                    to API design to Ember on the front end. I also hacked the culture with <a
+                        href="https://hubot.github.com/">Hubot</a>, and spreadg organizational, cultural, and
+                    technological wisdom by speaking at conferences.
                 </p>
             </div><!-- end of resume-item -->
 
@@ -64,13 +90,20 @@
                 <h3 class="resume-item-title">GitHub</h3>
                 <h4 class="resume-item-details">2012 — 2014</h4>
                 <p class="resume-item-copy">
-                    GitHub had been on my I-need-to-work-here list since about 2009, and when I was offered a job there, I jumped at it. It was everything I had hoped for, and more.
+                    GitHub had been on my I-need-to-work-here list since about 2009, and when I was offered a job there,
+                    I jumped at it. It was everything I had hoped for, and more.
                 </p>
                 <p class="resume-item-copy">
-                    This was where I found out what it is to be a citizen of the Internet in a real way. I traveled the world, speaking at conferences. I worked with some of my personal heroes. I was freed from having a commute. I learned what it was to help make a company.
+                    This was where I found out what it is to be a citizen of the Internet in a real way. I traveled the
+                    world, speaking at conferences. I worked with some of my personal heroes. I was freed from having a
+                    commute. I learned what it was to help make a company.
                 </p>
                 <p class="resume-item-copy">
-                    My main focus was <a href="http://libgit2.github.com">libgit2</a>, an implementation of git with a nice API, and no dependencies on a UNIX environment. This led me to helping out with back-end systems, mainline git, and even the native clients (<a href="https://desktop.github.com">GitHub Desktop</a>). I helped run an open-source project, wrote its documentation, and found out how I work best.
+                    My main focus was <a href="http://libgit2.github.com">libgit2</a>, an implementation of git with a
+                    nice API, and no dependencies on a UNIX environment. This led me to helping out with back-end
+                    systems, mainline git, and even the native clients (<a href="https://desktop.github.com">GitHub
+                        Desktop</a>). I helped run an open-source project, wrote its documentation, and found out how I
+                    work best.
                 </p>
             </div><!-- end of resume-item -->
 
@@ -85,7 +118,8 @@
             </div>
         </section>
 
-        <section class="content-section"> <!-- Side projects -->
+        <section class="content-section">
+            <!-- Side projects -->
 
             <header class="section-header">
                 <h2>Side Projects</h2>
@@ -94,31 +128,45 @@
             <div class="resume-item">
                 <h3 class="resume-item-title">Pro Git, 2nd Edition</h3>
                 <p class="resume-item-copy">
-                    This is effectively <em>the book</em> on Git, and I was honored and excited when Scott asked me to co-author the second edition. It's now even better than it was when I read it as a younger engineer. The ability to help developers new and old become better at their craft is a point of pride for me, a strong reason why I do what I do.
+                    This is effectively <em>the book</em> on Git, and I was honored and excited when Scott asked me to
+                    co-author the second edition. It's now even better than it was when I read it as a younger engineer.
+                    The ability to help developers new and old become better at their craft is a point of pride for me,
+                    a strong reason why I do what I do.
                 </p>
             </div><!-- end of resume-item -->
 
             <div class="resume-item">
                 <h3 class="resume-item-title">Building Tools with GitHub</h3>
                 <p class="resume-item-copy">
-                    I contributed two chapters to Chris Dawson's book on GitHub's API. This is like the missing manual for GitHub, and includes lots of examples of how to write code that works with source control, issues, and lots more. I wrote a chapter on the search API (in Python), and a chapter on the commit-status API (in C#).
+                    I contributed two chapters to Chris Dawson's book on GitHub's API. This is like the missing manual
+                    for GitHub, and includes lots of examples of how to write code that works with source control,
+                    issues, and lots more. I wrote a chapter on the search API (in Python), and a chapter on the
+                    commit-status API (in C#).
                 </p>
             </div><!-- end of resume-item -->
 
             <div class="resume-item">
-                <h3 class="resume-item-title">Video Training</h3>
+                <h3 class="resume-item-title">Training and Teaching</h3>
                 <p class="resume-item-copy">
-                    I've been recording training videos on various topics, as a way of feeding my desire to teach.
+                    I've been working with the Linux Foundation and its partners to provide on-premises training for
+                    <a href="https://training.linuxfoundation.org/training/kubernetes-administration/">Kubernetes</a>.
+                    I've also been recording training videos on various topics:
                 </p>
                 <ul class="resume-item-copy">
-                    <li><a href="http://www.skillsoft.com/catalog/detail.asp?CourseCode=sd_gitf_a01_it_enus">Beginning</a> and <a href="http://www.skillsoft.com/catalog/detail.asp?CourseCode=sd_gitf_a02_it_enus">Advanced Git</a> (Skillsoft)</li>
-                    <li><a href="http://www.infiniteskills.com/training/porting-from-python-2-to-python-3.html">Porting from Python 2 to Python 3</a> (O'Reilly)</li>
+                    <li><a
+                            href="http://www.skillsoft.com/catalog/detail.asp?CourseCode=sd_gitf_a01_it_enus">Beginning</a>
+                        and <a
+                            href="http://www.skillsoft.com/catalog/detail.asp?CourseCode=sd_gitf_a02_it_enus">Advanced
+                            Git</a> (Skillsoft)</li>
+                    <li><a href="http://www.infiniteskills.com/training/porting-from-python-2-to-python-3.html">Porting
+                            from Python 2 to Python 3</a> (O'Reilly)</li>
                     <li>Real-World Applications with Docker and Kubernetes (O'Reilly, in production)</li>
                 </ul>
             </div><!-- end of resume-item -->
         </section>
 
-        <section class="content-section"> <!-- Speaking -->
+        <section class="content-section">
+            <!-- Speaking -->
             <header class="section-header">
                 <h2>Speaking</h2>
             </header>
@@ -126,14 +174,21 @@
             <div class="resume-item">
                 <h3 class="resume-item-title">Robots and Culture</h3>
                 <p class="resume-item-copy">
-                    I'd been thinking a lot about how automation can change a company's culture. The best example of this that I've seen is the addition of a robot to a team that uses chat. I gave <a href="/talks/robots/">this talk</a> at <a href="http://joyofcoding.org/">Joy of Coding 2015</a> in Rotterdam, and also in an updated form at <a href="http://2015.cascadiajs.com/">CascadiaFest 2015</a> in Blaine, Washington.
+                    I'd been thinking a lot about how automation can change a company's culture. The best example of
+                    this that I've seen is the addition of a robot to a team that uses chat. I gave <a
+                        href="/talks/robots/">this talk</a> at <a href="http://joyofcoding.org/">Joy of Coding 2015</a>
+                    in Rotterdam, and also in an updated form at <a href="http://2015.cascadiajs.com/">CascadiaFest
+                        2015</a> in Blaine, Washington.
                 </p>
             </div>
 
             <div class="resume-item">
                 <h3 class="resume-item-title">Better at Git</h3>
                 <p class="resume-item-copy">
-                    While I worked at GitHub on a Git implementation, I was very interested in teaching people about the tools they use every day. I found that just a little bit of knowledge about Git internals made people <em>much</em> more effective at using the tool. I gave <a href="/talks/openblend.html">a tips-and-tricks talk</a> in various forms at many conferences over the course of two years:
+                    While I worked at GitHub on a Git implementation, I was very interested in teaching people about the
+                    tools they use every day. I found that just a little bit of knowledge about Git internals made
+                    people <em>much</em> more effective at using the tool. I gave <a href="/talks/openblend.html">a
+                        tips-and-tricks talk</a> in various forms at many conferences over the course of two years:
                 </p>
 
                 <ul class="resume-item-copy">
@@ -148,7 +203,8 @@
             </div>
         </section>
 
-        <section class="content-section"> <!-- Skills -->
+        <section class="content-section">
+            <!-- Skills -->
 
             <header class="section-header">
                 <h2>Skills</h2>
@@ -157,38 +213,53 @@
             <div class="resume-item">
                 <h4 class="resume-item-details">Languages</h4>
                 <p class="resume-item-copy">
-                  I've written device drivers, cross-platform libraries, and GUI applications in C and C++. I've worked on production applications in C#, using both WPF for client-side apps and ASP.NET on the server. I've taught <a href="http://www.infiniteskills.com/training/porting-from-python-2-to-python-3.html">a course</a> on converting from Python 2 to Python 3. I've done user experience work on front-end web applications using Ember, Angular, Knockout and Vanilla.js.
+                    I've written device drivers, cross-platform libraries, and GUI applications in C and C++. I've
+                    worked on production applications in C#, using both WPF for client-side apps and ASP.NET on the
+                    server. I've taught <a
+                        href="http://www.infiniteskills.com/training/porting-from-python-2-to-python-3.html">a
+                        course</a> on converting from Python 2 to Python 3. I've done user experience work on front-end
+                    web applications using Ember, Angular, Knockout and Vanilla.js.
                 </p>
                 <p class="resume-item-copy">
-                  But that's just application code. I've automated deployments using bare shell scripts, Perl, Ansible manifests, and Kubernetes definitions. I've tinkered with Objective C, Swift, Lisp, and Haskell.  I came close to writing a parser for an installer DSL, but settled for an Emacs syntax highlighter instead.
+                    But that's just application code. I've automated deployments using bare shell scripts, Perl, Ansible
+                    manifests, and Kubernetes definitions. I've tinkered with Objective C, Swift, Lisp, and Haskell. I
+                    came close to writing a parser for an installer DSL, but settled for an Emacs syntax highlighter
+                    instead.
                 </p>
             </div>
 
             <div class="resume-item">
                 <h4 class="resume-item-details">Platforms &amp; Tools</h4>
                 <p class="resume-item-copy">
-                    I've written code for OS X, Linux, and Windows, and I've written code that runs on all three. I've solved some of the same problems Docker solves. I've written device drivers, GUI applications, HTTP backends, and HTML/CSS/Javascript front ends, with and without frameworks.
+                    I've written code for OS X, Linux, and Windows, and I've written code that runs on all three. I've
+                    solved some of the same problems Docker solves. I've written device drivers, GUI applications, HTTP
+                    backends, and HTML/CSS/Javascript front ends, with and without frameworks.
                 </p>
                 <p class="resume-item-copy">
-                    I know the weird stuff too. I have a favorite source control tool. I have opinions on defect tracking. I know the difference between UCS-2 and UTF-16. I know what how you say what you say says about what you're saying. And I'd love to debate agile versus Agile.
+                    I know the weird stuff too. I have a favorite source control tool. I have opinions on defect
+                    tracking. I know the difference between UCS-2 and UTF-16. I know what how you say what you say says
+                    about what you're saying. And I'd love to debate agile versus Agile.
                 </p>
             </div>
 
             <div class="resume-item">
                 <h4 class="resume-item-details">My Secret Weapon</h4>
                 <p>
-                    I love to learn.  Especially when it comes to technology.
+                    I love to learn. Especially when it comes to technology.
                 </p>
                 <p>
-                    Give me two weeks and a good book, and I'll help you find bugs in an iOS app, and <em>I'll be happy doing it.</em>  Scala?  Sounds like fun.  COBOL?  Well, we all have our limits.
+                    Give me two weeks and a good book, and I'll help you find bugs in an iOS app, and <em>I'll be happy
+                        doing it.</em> Scala? Sounds like fun. COBOL? Well, we all have our limits.
                 </p>
                 <p>
-                    This is what I bring.  I'm really good at staying up to date, bringing in fresh ideas, and trying new things.
+                    This is what I bring. I'm really good at staying up to date, bringing in fresh ideas, and trying new
+                    things.
                 </p>
             </div>
         </section>
 
-        <section class="content-section"> <!-- Education -->
+        <section class="content-section">
+            <!-- Education -->
 
             <header class="section-header">
                 <h2>Education</h2>
@@ -198,7 +269,9 @@
                 <h3 class="resume-item-title">Portland State University</h3>
                 <h4 class="resume-item-details">Master's Degree, Software Engineering &bull; 2006 — 2012</h4>
                 <p class="resume-item-copy">
-                    I took night classes to earn my master's degree in software engineering. It's been a long journey; taking classes part-time at 30 is a little different than when I was doing it full time.  The benefits have been worth the cost and effort, for me and my employers.
+                    I took night classes to earn my master's degree in software engineering. It's been a long journey;
+                    taking classes part-time at 30 is a little different than when I was doing it full time. The
+                    benefits have been worth the cost and effort, for me and my employers.
                 </p>
             </div>
 
@@ -206,7 +279,8 @@
                 <h3 class="resume-item-title">Oregon State University</h3>
                 <h4 class="resume-item-details">Bachelors Degree, Computer Engineering &bull; 1999 — 2003</h4>
                 <p class="resume-item-copy">
-                    This is where I cut my teeth, and where I got my first taste of professional engineering.  I was part of an internship program, and had a full year of experience before I graduated.
+                    This is where I cut my teeth, and where I got my first taste of professional engineering. I was part
+                    of an internship program, and had a full year of experience before I graduated.
                 </p>
             </div>
 
@@ -223,13 +297,16 @@
             <div class="resume-item">
                 <h3 class="resume-item-title"><a href="http://donutlocator.io">donutfinder.io</a></h3>
                 <h4 class="resume-item-details">Founder & Primary Developer &bull; 2012 &mdash; Present</h4>
-                <p class="resume-item-copy">Donut Locator is an open source node/ember app that lets users find donuts within a defined radius from their home.</p>
+                <p class="resume-item-copy">Donut Locator is an open source node/ember app that lets users find donuts
+                    within a defined radius from their home.</p>
             </div>
 
             <div class="resume-item">
                 <h3 class="resume-item-title">Springfield Donut Eater's User Group</h3>
                 <h4 class="resume-item-details">Co-Founder & Organizer &bull; 2007 &mdash; Present</h4>
-                <p class="resume-item-copy">DEUG is a local monthly meetup in Springfield where we share all the latest tips and tricks for dat donut lifestyle. I organize the group, and typically eat most of the donuts.</p>
+                <p class="resume-item-copy">DEUG is a local monthly meetup in Springfield where we share all the latest
+                    tips and tricks for dat donut lifestyle. I organize the group, and typically eat most of the donuts.
+                </p>
             </div>
 
         </section>
@@ -253,13 +330,16 @@
             <div class="resume-item">
                 <h3 class="resume-item-title">Duff Beer Customer of the year</h3>
                 <h4 class="resume-item-details">1997 &mdash; 2001, 2003, 2008 &mdash; 2012</h4>
-                <p class="resume-item-copy">Honored by <a href="https://en.wikipedia.org/wiki/Duff_Beer">Duff Beer</a> for being an outstanding customer several years straight. Qualifications included most beer consumed at a bar, most beer purchased, and most beer ralphed.</p>
+                <p class="resume-item-copy">Honored by <a href="https://en.wikipedia.org/wiki/Duff_Beer">Duff Beer</a>
+                    for being an outstanding customer several years straight. Qualifications included most beer consumed
+                    at a bar, most beer purchased, and most beer ralphed.</p>
             </div>
 
             <div class="resume-item">
                 <h3 class="resume-item-title">Moe's Patron of the Month</h3>
                 <h4 class="resume-item-details">12/2001, 8/2004</h4>
-                <p class="resume-item-copy">Specifically this prestigious awarded twice for stopping a robber with my belly.</p>
+                <p class="resume-item-copy">Specifically this prestigious awarded twice for stopping a robber with my
+                    belly.</p>
             </div>
 
         </section>
@@ -277,7 +357,8 @@
             <div class="resume-item">
                 <h3 class="resume-item-title"><a href="http://beerfortheworld.com">Beer for the World</a></h3>
                 <h4 class="resume-item-details">Volunteer &bull; 2008 &mdash; Present</h4>
-                <p class="resume-item-copy">Organized fund drives and participated in fundraising events for the benefit of families in third world countries without proper access to malt beverages.</p>
+                <p class="resume-item-copy">Organized fund drives and participated in fundraising events for the benefit
+                    of families in third world countries without proper access to malt beverages.</p>
             </div>
 
             <div class="resume-item">
