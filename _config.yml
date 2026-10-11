@@ -1,6 +1,6 @@
 # Site settings
 title: "Ben Straub"
-description: ":+1: Hire!"
+description: "Platform architect building the automation and AI infrastructure behind Zendesk products"
 
 # Build settings
 markdown: kramdown
@@ -11,7 +11,7 @@ sass:
 # Resume settings
 resume_avatar:                  "true"
 resume_name:                    "Ben Straub"
-resume_title:                   "Platform Engineer"
+resume_title:                   "Senior Staff Engineer &middot; Platform Architect &middot; Technical Leader"
 resume_contact_email:           "ben@straub.cc"
 
 # use "yes" to display the email contact button,
