@@ -9,7 +9,7 @@ sass:
   style: compressed
 
 # Resume settings
-resume_avatar:                  "true"
+resume_avatar:                  "false"
 resume_name:                    "Ben Straub"
 resume_title:                   "Senior Staff Engineer &middot; Platform Architect &middot; Technical Leader"
 resume_contact_email:           "ben@straub.cc"
